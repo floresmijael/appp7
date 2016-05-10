@@ -1,0 +1,279 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Primera Aplicacion</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/temasapp7.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/zaragoza1.jpg','imagenes/puebla4.jpg','imagenes/saldo1.jpeg','imagenes/loreto.jpg')">
+
+<div data-role="page" id="Principal" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" 	   data-back-btn-theme="a">
+<h1>Batalla de Puebla</h1>
+</div>
+<div data-role="main" class="ui-content">
+<center>
+<iframe width="260" height="145" src="https://www.youtube.com/embed/56s81BZzljs" frameborder="0" allowfullscreen></iframe>
+</center>
+</div>
+<div>
+<ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-b">
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Antecedentes del conflicto</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Personajes importantes </h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Batalla de Atlixco</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Desarrollo de la batalla</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Culminacion de la batalla</h2>
+</a>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Lugares de la batalla en la actualidad</h2>
+</a>
+</li>
+</ul>
+</div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+  <div>
+  <img src="res/android/mdpi.png" width="58" height="58" />
+  </div>
+  <div>
+  <h4>Mijael Flores Cerezo</h4>
+  </div>
+  </div>
+  </div>
+  <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+  <h1>Antecedentes</h1>
+ 
+  </div>
+  <div data-role="content">
+  <div>
+  <p>A consecuencia de la Guerra de Reforma (1857 al 1962), México estaba  financieramente en ruinas, por lo que el Gobierno conservador decidió solicitar préstamos en efectivo a banqueros europeos, a cambio de bonos públicos para solventar los gastos del conflicto armado.</p>
+  <p>El presidente Benito Juárez declaró el 17 de julio de 1861, una moratoria de dos años en el pago de deudas a prestamistas extranjeros. Posteriormente, en octubre de ese mismo año, Francia, Inglaterra y España acordaron intervenir la República para exigir el pago de sus deudas.</p>
+  <p>A principios de 1862, Inglaterra y España llegaron a un acuerdo con México y retiraron sus tropas; sin embargo, Francia manifestó su deseo de establecer un Gobierno monárquico, el cual recibió el apoyo de los políticos mexicanos conservadores.</p>
+  <div align="center">
+  <img src="imagenes/acuerdo.jpg" width="230" height="205">
+  </div>
+  </div>
+  </div>
+  <div data-role="footer" data-theme="a" data-position="fixed" align="center">
+  <div>
+  <img src="res/android/mdpi.png" width="58" height="58" />
+  </div>
+  <div>
+  <h4>Mijael Flores Cerezo</h4>
+  </div>
+  </div>
+  </div>
+ 
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+  <h1>Personajes Importantes</h1>
+ </div>
+<div data-role="content">
+ <div>
+ <b>Benito Juárez</b>
+ <p>Benito Pablo Juárez García, nació en San Pablo Guelatao, Oaxaca un 21 de marzo de 1806</p>
+ <p>Entre los años de 1862 y 1867, sostiene de forma admirable el gobierno mexicano contra conservadores y francés, aun cuando andaba peregrinando entre México y Estados Unidos. Fue en esta época que sucede la Batalla de Puebla, lucha de la cual el Ejército Mexicano sale victorioso comandados por el Gral. Ignacio Zaragoza.</p>
+ <div align="center">
+ <img src="imagenes/juarez.jpg" width="149" height="174">
+ </div>
+ <hr>
+ <b>Ignacio Zaragoza</b>
+ <p>Nació el 24 de marzo de 1829 en el presidio de Bahía del Espíritu Santo, Texas, cuando esta provincia aún pertenecía a México.</p>
+ <p>Cuando las fuerzas francesas de Napoleón III invadieron México para imponer como emperador a Maximiliano de Habsburgo, Zaragoza, con el rango de general y al mando del Ejército de Oriente, las enfrentó en Acultzingo en la llamada Batalla de Las Cumbres, el 28 de abril de 1862, siendo obligado a retroceder. Zaragoza comprendió la posición defensiva y favorable que tenía la ciudad de Puebla, paso obligado para ir a la Ciudad de México.</p>
+ <div align="center">
+ 
+   <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image9','','imagenes/zaragoza1.jpg',1)"><img src="imagenes/zaragoza.jpg" width="212" height="237" id="Image9"></a></div>
+ <hr>
+ <b>Ignacio Mejia Álvarez</b>
+ <p>Ignacio Mejía Álvarez, nació en Oaxaca el 4 de agosto de 1814</p>
+ <p>Durante la Segunda Intervención Francesa, fue Jefe de la División Oaxaca y participó en la heroica Batalla de Puebla al lado del Gral. Ignacio Zaragoza, teniendo como trinchera el Fuerte de Guadalupe.</p>
+ <div align="center">
+ <img src="imagenes/mejia.jpg" width="196" height="214">
+ </div>
+ <hr>
+ <b>Porfirio Díaz</b>
+ <p>José de la Cruz Porfirio Díaz Morí, nació en Oaxaca</p>
+ <p>Su participación en la Batalla de Puebla el 5 de mayo se dio al defender el ala izquierda de la ciudad y repeliendo en dos ocasiones el ataque francés. Una vez que huyeron los franceses, González Ortega y Porfirio Díaz se dieron a la tarea de perseguirlos, hasta que Zaragoza se los impidió. Ese mismo día, Juárez recibió una carta de Zaragoza mencionándole los detalles de la batalla, y haciendo hincapié en "el empeño y bizarría del ciudadano general don Porfirio Díaz".</p>
+ <div align="center">
+ <img src="imagenes/diaz.jpg" width="150" height="189">
+ </div>
+ <hr>
+ <b>Charles Ferdinand Latrille</b>
+ <p>Charles Ferdinand Latrille, Comte de Lorencez, nació en París un 23 de mayo de 1814</p>
+ <p>Su incursión en la historia de México fue en enero de 1862, cuando es enviado a México con refuerzos de L’Herillier y Gambier para la expedición del país. Es promovido General de División el 20 de marzo, tan solo 15 días después de haber llegado a Veracruz; y para el 27 de abril, asumió el mando de todas las tropas francesas en México.</p>
+ <div align="center">
+ <img src="imagenes/lorencez.jpg" width="135" height="161">
+ </div>
+ </div>
+ </div>
+ <div data-role="footer" data-theme="a" align="center" data-position="fixed">
+ <div>
+  <img src="res/android/mdpi.png" width="58" height="58" />
+  </div>
+  <div>
+  <h4>Mijael Flores Cerezo</h4>
+  </div>
+ </div>
+ </div>
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+ <h1>Batalla de Atlixco</h1>
+ </div>
+ <div data-role="content">
+ <div>
+ <p>El 4 de mayo, los exploradores mexicanos volvieron con noticias de que una columna de conservadores a caballo, al mando de Leonardo Márquez y José María Cobos, marchaba por la zona de Atlixco para unirse con las fuerzas de Lorencez en el ataque a Puebla. Zaragoza envió una brigada de 2000 hombres bajo el mando de Tomás O'Horán y Antonio Carbajal, con el fin de detenerlo, lo cual lograron. Aunque sus fuerzas habían disminuido, los mexicanos se prepararon para la defensa de Puebla. Contaban con dos baterías de artillería de batalla y dos de montaña, cubriendo los fuertes con 1200 hombres y formando a otros 3500 en cuatro columnas de infantería con una batería de batalla y una brigada de caballería por el lado del camino a Amozoc.</p>
+<div align="center"><img src="imagenes/atlixco.jpg" width="230" height="205"></div>
+ </div>
+ </div>
+ <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+  <div>
+  <img src="res/android/mdpi.png" width="58" height="58" />
+  </div>
+  <div>
+  <h4>Mijael Flores Cerezo</h4>
+  </div>
+ </div>
+ </div>
+
+ <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+ <h1>Desarrollo del comflicto</h1>
+ </div>
+ <div data-role="content">
+ <div>
+ <div align="center">
+ <!-- Start WOWSlider.com -->
+<iframe src="visor/indexwow.html" style="width:978px;height:120px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->
+ </div>
+ <p> la mañana del 5 de mayo, los franceses aparecieron en el horizonte, avanzando desde la cercana Hacienda de Rementería, cruzando fuego con las guerrillas de caballería que se batían en retirada y que no se replegaron hasta que las líneas francesas estuvieron formadas y listas para avanzar. La batalla se inició en forma a las 11:15 de la mañana, anunciándose con un cañonazo desde el Fuerte de Guadalupe y acompañado por los repiques de las campanas de la ciudad. En ese momento se dio una maniobra sorpresiva: la columna francesa, que venía avanzando en orden de oriente a poniente, se dividió en dos: la primera, compuesta por aproximadamente 4000 hombres y protegida con su artillería, dio un violento viraje hacia la derecha y se dirigió hacia los fuertes; mientras que la segunda columna, compuesta por el resto de la infantería, quedó como reserva.</p>
+ <p>Los franceses, apoyados por el 1.er. y 2o. Regimientos de Infantería de Marina, se abalanzaron sobre el resto de la línea mexicana, siendo recibidos con la bayoneta. La columna francesa fue rechazada en Guadalupe y Loreto, siendo igualmente repelidos los ataques de otras columnas francesas desplegadas. En ese momento, el coronel mexicano José Rojo avisó a Antonio Álvarez que era tiempo de que la caballería mexicana entrara en acción para alcanzar una victoria completa. Ordenó a los Carabineros de Pachuca cargar sobre los restos de la columna, disparando sus carabinas y lanzando mandobles de sable sobre los franceses, siendo totalmente rechazados.</p>
+ <div align="center">
+ <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image13','','imagenes/puebla4.jpg',1)"><img src="imagenes/puebla1.jpg" width="230" height="189" id="Image13"></a>
+ </div>
+ <p>Mientras, cuando la segunda columna llegó al Fuerte de Guadalupe protegida por una línea de tiradores, Porfirio Díaz acudió en auxilio de los Rifleros de San Luis Potosí, que estaban a punto de ser rodeados. Movió en columna al Batallón Guerrero, a las órdenes del coronel Jiménez, y le ganó el terreno a los franceses. Para apoyar envió al resto de las tropas de Oaxaca, con los coroneles Espinoza y Loaeza a la cabeza, con lo que se logró expulsar al enemigo de las cercanías. El éxito alentó a Díaz, que destacó al Batallón Morelos con dos piezas de artillería a la izquierda, mientras por la derecha los Rifleros de San Luis Potosí se reponían de la pelea, antecedidos por una carga de los Lanceros de Oaxaca, trabándose un combate cuerpo a cuerpo que hizo retroceder a los atacantes.</p>
+ <p>En aquel momento, luego de ser repelidos por última vez, las efectivos franceses empezaron a huir, completamente dispersados. Se replegaron a la hacienda Los Álamos, para finalmente retirarse hacia Amozoc</p>
+ <div data-role="collapsible" data-content-theme="false">
+<h1>Aniversario de la batalla de puebla</h1>
+<div>
+<p>Enlace</p>
+<br>
+</div>
+<iframe src="http://www.5demayopuebla.mx/historia-personajes.php" style="width:100%;height:80%;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->
+</div>
+ 
+ </div>
+ </div>
+ <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+ <div>
+  <img src="res/android/mdpi.png" width="58" height="58" />
+  </div>
+  <div>
+  <h4>Mijael Flores Cerezo</h4>
+  </div>
+ </div>
+ </div>
+
+ <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+ <h1>Culminacion de la batalla</h1>
+ </div>
+ <div data-role="content">
+ <div>
+ <p>Mientras se libraba la batalla, en el Palacio Nacional y en la Ciudad de México en general se vivía un ambiente de tensa espera. Lo último que se sabía de Puebla era el telegrama enviado por Zaragoza hacia las 12:30 del día, en el que avisaba que el fuego de artillería de ambos lados había iniciado. Luego, silencio. Ante la incertidumbre, el gobierno había hecho salir precipitadamente al general Florencio Antillón al mando de los Batallones de Guanajuato, quedando como guardianes de la capital sólo 2,000 hombres del Regimiento de Coraceros Capitalinos y algunos centenares de milicianos pobremente armados. Si las tropas guanajuatenses se perdían, la capital quedaría desprotegida.</p>
+ <p>Zaragoza envió más tarde otro telegrama en el que dijo que los franceses habían iniciado la retirada hacia Amozoc, pero sin mencionar el resultado final de la batalla. Finalmente, a las 5:49 de la tarde se recibió otro parte, dirigido al ministro de Guerra, que causó júbilo (y un gran alivio) en Palacio Nacional:</p>
+ <p>Las armas del Supremo Gobierno se han cubierto de gloria: el enemigo ha hecho esfuerzos supremos por apoderarse del Cerro de Guadalupe, que atacó por el oriente de izquierda y derecha durante tres horas: fue rechazado tres veces en completa dispersión y en estos momentos está formado en batalla, fuerte de más de 4,000 hombres, frente al cerro de Guadalupe, fuera de tiro. No lo bato, como desearía, porque el Gobierno sabe (que) no tengo para ello fuerza bastante. Calculo la pérdida del enemigo, que llegó hasta los fosos de Guadalupe en su ataque, en 600 o 700 entre muertos y heridos; 400 habremos tenido nosotros. Sírvase vd. dar cuenta de este parte al C. Presidente.— I. Zaragoza</p>
+ <p>El saldo final de la batalla fue de 476 muertos y 345 heridos del lado francés, así como 83 muertos, cerca de 131 heridos y 12 desaparecidos para el Ejército de Oriente. A las 7 de la noche del día 6 de mayo arribaron a Puebla el general Antillón y sus tropas; Zaragoza esperaba un nuevo ataque de Lorencez, pero éste, el día 8 de mayo, dispuso la retirada hasta San Agustín del Palmar, siendo "saludado" por la artillería republicana y la Banda de Guerra de los Carabineros, quienes tocaron "Escape". </p>
+ <div align="center">
+   <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image14','','imagenes/saldo1.jpeg',1)"><img src="imagenes/saldo.jpeg" width="240" height="230" id="Image14"></a>
+   </div>
+ </div>
+ </div>
+ <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+  <div>
+  <img src="res/android/mdpi.png" width="58" height="58" />
+  </div>
+  <div>
+  <h4>Mijael Flores Cerezo</h4>
+  </div>
+ </div>
+ </div>
+  <div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+ <h1>Lugares en la actualidad</h1>
+ </div>
+ <div data-role="content">
+ <div>
+ <div align="center"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image17','','imagenes/loreto.jpg',1)"><img src="imagenes/guadalupe.jpg" width="250" height="228" id="Image17"></a></div>
+ <br>
+  <p>En 1930 los fuertes y la zona aledaña al cerro fueron declarados propiedad de la nación al servicio al pueblo, y en Loreto se construyó un Museo de Guerra. En 1962, con motivo del centenario de la batalla, el museo se amplió y se dotó de servicios al área del parque. Actualmente, en la Zona Histórica de los Fuertes se ubican también un Museo Regional del Instituto Nacional de Antropología e Historia, el Auditorio de la Reforma y la Casa Puebla. Además, a un costado se ubica el Centro de Exposiciones de Puebla y un monumento donde reposan los restos de Ignacio Zaragoza y su esposa Rafaela Padilla.</p>
+ </div>
+ </div>
+ <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+  <div>
+  <img src="res/android/mdpi.png" width="58" height="58" />
+  </div>
+  <div>
+  <h4>Mijael Flores Cerezo</h4>
+  </div>
+ </div>
+ </div>
+
+</body>
+ </html>
+
+
